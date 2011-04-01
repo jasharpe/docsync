@@ -6,7 +6,6 @@ import sys
 import getpass
 import os
 import getopt
-from BeautifulSoup import BeautifulSoup
 from ftplib import FTP
 import zipfile
 import shutil

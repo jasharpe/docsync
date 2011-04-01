@@ -1,0 +1,13 @@
+This is a script that helps with the tedious task of publishing a Google doc in html form to a static website on a webserver controlled by you. This automates the following steps into a single command:
+
+- Going to Google docs and exporting the document
+- Downloading the resulting zip file and unzipping it somewhere
+- FTPing the contents to the webserver
+
+This process that took minutes now takes seconds. To be honest this probably isn't actually that useful, but I've found a couple of uses for it.
+
+Dependencies:
+
+- Google Docs Python API
+
+That's it!
