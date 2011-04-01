@@ -72,7 +72,7 @@ def main(argv):
     if document_entry.title.text == title:
       client.Export(document_entry, "tmp.zip")
       shutil.rmtree("tmp")
-      unzip_file_into_dir("tmp.zip", "tmp")
+      unzipFileIntoDir("tmp.zip", "tmp")
       success = True
   if not success:
     print "Failed to find " + title + " on Google docs"
@@ -96,7 +96,7 @@ def main(argv):
   except EOFError:
     ftp.close()
 
-def unzip_file_into_dir(file, dir):
+def unzipFileIntoDir(file, dir):
   os.mkdir(dir, 0777)
   z = zipfile.ZipFile(file)
   for name in z.namelist():
