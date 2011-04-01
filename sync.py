@@ -126,7 +126,7 @@ def getAuthenticatedClient(user):
         print "Bad authentication information from saved token."
         raise e
   except (IOError, gdata.client.Unauthorized):
-    client = gdata.docs.client.DocsClient(source='jsharpe-docssync-v1')
+    client = gdata.docs.client.DocsClient(source='jsharpe-docsync-v1')
     client.ssl = True
     client.http_client.debug = False
     while 1:
